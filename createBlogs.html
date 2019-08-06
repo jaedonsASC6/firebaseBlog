@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bootleg Blog Spot</title>
+    <script src="./createBlog.js" defer></script>
+    <script src="./main.js" defer></script>
+    <link rel="stylesheet" href="./createBlogStyle.css">
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/6.3.4/firebase.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#config-web-app -->
+
+    <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+        apiKey: "AIzaSyAsu8g42y2PscP5wiolZUjPMMG1_YetbmA",
+        authDomain: "bootlegblogspot.firebaseapp.com",
+        databaseURL: "https://bootlegblogspot.firebaseio.com",
+        projectId: "bootlegblogspot",
+        storageBucket: "",
+        messagingSenderId: "782957464409",
+        appId: "1:782957464409:web:a05cf14a66b28fe4"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    </script>
+</head>
+<body>
+    <ul>
+        <a href="./seeBlogs.html"><li>Read A Blog</li></a>
+        <a href="./createBlogs.html" id="activePage"><li>Make A Blog</li></a>
+    </ul>
+    <div class="blogCreator">
+        <form>
+            <div class="inputContainer">
+                <div class="titleInput">
+                    <label for="title">Title:</label>
+                    <input id="userTitle" type="text">
+                </div>
+                <div class="blogInput">
+                    <label for="blog">Your Blog:</label>
+                    <textarea id="userBlog"></textarea>
+                </div>
+            </div>
+            <button id="submitButton">Submit</button>
+        </form>
+    </div>
+</body>
+</html>

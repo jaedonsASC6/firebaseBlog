@@ -1,0 +1,39 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: transparent;
+  }
+  
+  a {
+    float: left;
+  }
+  
+ a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* Change the link color to #111 (black) on hover */
+  a:hover {
+    background-color: #111;
+  }
+
+.blogPost{
+    border: 1px solid black;
+    margin-top: 2.5%;
+    padding-left:2.5%; 
+}
+body{
+    background-color: #080808;
+}
+.blogPost p{
+    color: white;
+}
+.blogPost h2{
+    color: white;
+}

@@ -3,7 +3,8 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: transparent;
+    background-color: rgba(0, 0, 0, .75);
+
   }
   
   a {
@@ -28,12 +29,9 @@ ul {
     margin-top: 2.5%;
     padding-left:2.5%; 
 }
-body{
-    background-color: #080808;
-}
 .blogPost p{
-    color: white;
+    color: black;
 }
 .blogPost h2{
-    color: white;
+    color: black;
 }
